@@ -1,0 +1,24 @@
+{
+  "likes": [
+    {
+      "id": 1,
+      "artist": "ArtistName1",
+      "title": "SongTitle1"
+    },
+    {
+      "id": "6ccb",
+      "artist": "Popcaan ",
+      "title": "we caa done"
+    },
+    {
+      "id": "328c",
+      "artist": "burna boy",
+      "title": "ye"
+    },
+    {
+      "id": "f7ce",
+      "artist": "burna boy",
+      "title": "ye"
+    }
+  ]
+}

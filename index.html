@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lyrics App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lyrics App</h1>
+        <form id="searchForm">
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" required>
+            <label for="title">Title:</label>
+            <input type="text" id="title" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="lyricsContainer"></div>
+        <button id="likeButton" class="like-button">Like</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
