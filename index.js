@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('searchForm');
     const lyricsContainer = document.getElementById('lyricsContainer');
     const likeButton = document.getElementById('likeButton');
+    let isLiked = false;
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -9,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     likeButton.addEventListener('click', function () {
-        likeSong();
+        toggleLike();
     });
 
     async function searchLyrics() {
@@ -35,55 +36,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    async function likeSong() {
-        const artist = document.getElementById('artist').value;
-        const title = document.getElementById('title').value;
+    function toggleLike() {
+        isLiked = !isLiked;
+        updateLikeButton();
+    }
 
-        if (artist && title) {
-            try {
-                // Send a request to like the song
-                const likeResponse = await fetch('http://localhost:3000/likes', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        artist,
-                        title,
-                    }),
-                });
-
-                if (likeResponse.ok) {
-                    console.log('Song liked!');
-
-                    // Update the liked songs on the UI
-                    updateLikedSongs();
-                } else {
-                    console.error('Failed to like the song.');
-                }
-            } catch (error) {
-                console.error('Error liking the song:', error);
-            }
+    function updateLikeButton() {
+        if (isLiked) {
+            likeButton.classList.add('liked');
         } else {
-            console.error('Cannot like the song without artist and title.');
+            likeButton.classList.remove('liked');
         }
-    }
-
-    async function updateLikedSongs() {
-        try {
-            // Fetch the updated liked songs from the server
-            const likedSongsResponse = await fetch('http://localhost:3000/likes');
-            const likedSongs = await likedSongsResponse.json();
-
-            // Update the UI with the liked songs
-            displayLikedSongs(likedSongs);
-        } catch (error) {
-            console.error('Error updating liked songs:', error);
-        }
-    }
-
-    function displayLikedSongs(likedSongs) {
-        // For simplicity, replace this with your logic to display liked songs in the UI
-        console.log('Liked Songs:', likedSongs);
     }
 });
+
