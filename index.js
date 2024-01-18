@@ -43,10 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateLikeButton() {
         if (isLiked) {
+            likeButton.innerHTML = '&#9829;'; // Filled heart
             likeButton.classList.add('liked');
         } else {
+            likeButton.innerHTML = '&#9825;'; // Empty heart
             likeButton.classList.remove('liked');
         }
     }
 });
-
