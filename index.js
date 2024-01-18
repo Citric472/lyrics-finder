@@ -50,4 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
             likeButton.classList.remove('liked');
         }
     }
+
+    // Initial state: Like feature starts as an empty heart
+    updateLikeButton();
 });
