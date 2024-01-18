@@ -45,16 +45,26 @@ button:hover {
     white-space: pre-line;
 }
 
+
 .like-button {
-    font-size: 24px;  /* Adjust the font size as needed */
     background: none;
     border: none;
     cursor: pointer;
-    transition: color 0.3s ease;  /* Add transition for a smooth color change */
+    transition: transform 0.2s ease; /* Add transform transition for a subtle animation */
 }
 
 .like-button.liked {
-    color: #e74c3c;  /* Change the color for liked state */
+    transform: scale(1.2); /* Increase the size when liked */
+}
+
+.heart-icon {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #e74c3c; /* Heart color for liked state */
+    transition: color 0.3s ease; /* Add color transition for a smooth change */
+}
+
+.like-button:hover {
+    transform: scale(1.2); /* Scale on hover for a subtle interaction */
 }
 
 
