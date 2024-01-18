@@ -42,8 +42,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updateLikeButton() {
-        const heartSymbol = isLiked ? '&#10084;' : '&#9825;'; // Filled heart or empty heart
-        likeButton.innerHTML = `<span class="heart-icon">${heartSymbol}</span>`;
-        likeButton.classList.toggle('liked');
+        if (isLiked) {
+            likeButton.innerHTML = '&#10084;'; // Full heart
+            likeButton.classList.add('liked');
+        } else {
+            likeButton.innerHTML = '&#9825;'; // Empty heart
+            likeButton.classList.remove('liked');
+        }
     }
 });
