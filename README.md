@@ -34,33 +34,6 @@ This web application allows users to search for song lyrics by entering an artis
 - Node.js installed
 - JSON Server installed (for data persistence)
 
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/melodymate.git
-   cd melodymate
-2. Navigate to the project directory:
-
-  ```bash
-  Copy code
-  cd MelodyMate-Lyrics-Finder
-
-Certainly! Below is a template for a well-documented README file for your GitHub project. Feel free to customize it according to your specific project details:
-
-markdown
-Copy code
-# Project Name
-
-MelodyMate Lyrics Finder App
-
-## Author
-
-[Your Name]
-
-## Description
-
-The MelodyMate Lyrics Finder App is a JavaScript application that allows users to search for song lyrics by providing the artist name and song title. The application fetches data from the [Lyrics.ovh API](https://api.lyrics.ovh/v1/) to provide accurate and up-to-date lyrics. Users can also like their favorite songs, and the liked songs are stored in a `db.json` file using JSON Server.
-
 ## Project Setup Instructions
 
 To set up and run the project locally, follow these steps:
@@ -76,7 +49,7 @@ To set up and run the project locally, follow these steps:
 5. Open index.html in your web browser or use a local development server to view the application.
 
 ## Live Site
-The live site is hosted on GitHub Pages. 
+The live site is hosted on GitHub Pages. You can access it here[https://github.com/Citric472/lyrics-finder] 
 
 ## Copyright and License
 Copyright (c) 2024 Cynthia Langat
