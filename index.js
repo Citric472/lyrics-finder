@@ -36,10 +36,34 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    function toggleLike() {
+    async function toggleLike() {
         isLiked = !isLiked;
         updateLikeButton();
+    
+        const artist = document.getElementById('artist').value;
+        const title = document.getElementById('title').value;
+    
+        if (isLiked && artist && title) {
+            try {
+                const response = await fetch('http://localhost:3000/likedsongs', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ artist, title }),
+                });
+    
+                if (response.ok) {
+                    console.log('Liked song added to db.json');
+                } else {
+                    console.error('Failed to add liked song to db.json:', response.status, response.statusText);
+                }
+            } catch (error) {
+                console.error('Error adding liked song to db.json:', error);
+            }
+        }
     }
+    
 
     function updateLikeButton() {
         if (isLiked) {

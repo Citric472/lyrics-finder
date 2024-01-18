@@ -1,6 +1,5 @@
 {
-  "likes": [
-    
+  "likedsongs": [
     {
       "id": "6ccb",
       "artist": "Popcaan ",
@@ -25,6 +24,11 @@
       "id": "ae60",
       "artist": "chris brown ",
       "title": "new flame"
+    },
+    {
+      "id": "3a37",
+      "artist": "rihanna ",
+      "title": "work"
     }
   ]
 }
