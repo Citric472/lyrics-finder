@@ -45,19 +45,18 @@ button:hover {
     white-space: pre-line;
 }
 
-
-
 .like-button {
-    padding: 10px;
-    background-color: #3498db;
-    color: #fff;
+    font-size: 24px;  /* Adjust the font size as needed */
+    background: none;
     border: none;
     cursor: pointer;
+    transition: color 0.3s ease;  /* Add transition for a smooth color change */
 }
 
 .like-button.liked {
-    background-color: #e74c3c;
+    color: #e74c3c;  /* Change the color for liked state */
 }
+
 
 
 header {
