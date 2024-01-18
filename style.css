@@ -58,3 +58,15 @@ button:hover {
 .like-button.liked {
     background-color: #e74c3c;
 }
+
+
+header {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
