@@ -48,6 +48,8 @@ To set up and run the project locally, follow these steps:
    json-server --watch db.json
 5. Open index.html in your web browser or use a local development server to view the application.
 
+## Project Management Tool
+  I used Trello for my project management.Here is the link to my workspace[https://trello.com/invite/b/m6jg8j1P/ATTI65967f514d2d918555e3c936feb41e7fAD6C6AC9/melodymate]
 ## Live Site
 The live site is hosted on GitHub Pages. You can access it here[https://github.com/Citric472/lyrics-finder] 
 

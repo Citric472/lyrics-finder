@@ -2,15 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f450;
+    background-image: url('images/lyrics.jpg'); /* Replace with your background image URL */
+    background-size: cover; /* Cover the entire viewport with the background image */
+    background-position: center;
+    color: #fdfffb; /* Default text color */
 }
 
 .container {
     max-width: 600px;
     margin: 50px auto;
-    background-color: #fff;
+    background-color: #351f0a49;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(15, 12, 12, 0.1);
 }
 
 form {
